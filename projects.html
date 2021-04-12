@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alexander R Scerba" />
+    <meta name="description" content="A testing ground for basic web development and a place to post my project updates and other things about myself." />
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+    <title>Projects - Alex Scerba</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="Logos/SEO_Pixel_Art.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <!--<img id="main_logo" src="Logos/SiteLogo.png" alt="Site logo. Text Alex Scerba next to pixel art observatory." />
+      <div id="header_text">
+        <p>
+          Maker, Tinkerer, & Computer Enthusiast<br />
+          <address>
+            Contact: <a href="mailto:a.scerba02@gmail.com">a.scerba02@gmail.com</a>
+          </address>
+        </p>
+      </div>-->
+      <span id="name">Alex Scerba</span>
+      <p>Maker, Tinkerer, & Computer Enthusiast</p>
+      <p id="top-contact">Contact: <a id="email" href="mailto:a.scerba02@gmail.com" title="ascerba02@gmail.com">a.scerba02@gmail.com</a></p>
+    </header>
+    <nav>
+      <a href="index.html" title="Home">Home</a>
+      <a href="hobbies.html" title="Hobbies">Hobbies</a>
+      <a href="projects.html" title="Projects">Projects</a>
+      <a href="blog.html" title="Blog">Blog</a>
+      <a id="gh_logo" href="https://github.com/ascerba"><img src="Logos/github.png" alt="Github logo PNG image" title="GitHub" /></a>
+    </nav>
+    <div class="content">
+      <aside>
+        <h2>Page Contents</h2>
+        <ul>
+          <li><a href="#LENSS" title="LENSS">LENSS (Lakeshore Environmental and Night Sky Sensor)</a></li>
+          <li><a href="#Website" title="This website">This Website</a></li>
+          <li><a href="#PCCase" title="'Drawer-mount' Computer">'Drawer-mount' Computer Enclosure</a></li>
+          <li><a href="#XS650" title="1981 Yamaha XS650S">1981 Yamaha XS650S</a></li>
+          <ul>
+            <li><a href="#XS650DesignIdeas" title="Design References and Ideas">Design References and Ideas</a></li>
+            <li><a href="#XSFirstRun" title="Proof That the Engine Ran">Proof That the Engine Ran</a></li>
+            <li><a href="#ArdIgnition" title="Arduino Controlled Ignion System">Arduino Controlled Ignition System</a></li>
+          </ul>
+        </ul>
+      </aside>
+      <main>
+        <h1>Projects</h1>
+        <hr />
+        <p>This is a list of personal and semi-professional projects that I have worked on or am working on.</p>
+        <p>An overview is provided at the beginning of each project followed by a more deep dive into topics such as how it works, the current status, and future plans.</p>
+        <article id="LENSS">
+          <h2>LENSS (Lakeshore Environmental and Night Sky Sensor)</h2>
+          <hr />
+          <p>From the internal overview (<a href="https://sites.google.com/a/starsatyerkes.net/yerkesprojects/programs/lenss?authuser=1">link</a>):</p>
+          <blockquote cite="https://sites.google.com/a/starsatyerkes.net/yerkesprojects/programs/lenss">The goal of the Lakeshore Environmental and Night Sky Sensor (LENSS) Project is to contribute to the   environmental health of Geneva Lake and increase the level of community involvement with environmental issues through a community-based environmental action project to design, test, build and deploy remote-monitoring stations that can accommodate a variety of sensors.</blockquote>
+        </article>
+        <article id="Website">
+          <h2>This Website</h2>
+          <hr />
+          <p>As outlined on the main page, the goal of this project is to create an internet presence not largely controlled by other companies and to learn about the infrastructure of websites. So far, the site is pure HTML and CSS, completely hand written, with no client-side or server-side scripting. The site is hosted locally, but load balancing across my other remote machines is in the works. A transition over to PHP is planned so as to make maintaining and adding new pages easier. JavaScript will also be added at a later stage to make navigation on mobile devices easier.</p>
+        </article>
+        <article id="PCCase">
+          <h2>'Drawer-mount' Computer</h2>
+          <hr />
+          <p>The goal of this project is to design and build a rack style computer case that can be slid into the existing desks at my dorm.</p>
+        </article>
+        <article id="XS650" title="1981 Yamaha XS650S">
+          <h2>1981 Yamaha XS650</h2>
+          <hr />
+          <p>My goal with this project is to create a clean, minimal motorcycle with as much DIY custom work as possible [read "safe"].</p>
+          <figure>
+            <img src="XS650/front.jpg" alt="Front view of a stripped down 1981 XS650 in a workshop." />
+            <figcaption>Pictured: XS650 in the shop</figcaption>
+          </figure>
+          <p>This is one of the biggest and longest projects that I am working on, and I do not see it reaching completion anytime soon due to school. One of the major hurdles is getting the engine to run. I did get it to work, but something happened, and currently it does not. A comprehensive teardown of the engine needs to happen to fully understand the problem, which takes time, so getting it to run is on hold.</p>
+          <p>In the meantime, there are many other aspects of the project that need to be addressed. They are outlined below.</p>
+          <hr class="dashed" />
+          <section id="XS650DesignIdeas">
+            <h3>Design References and Ideas</h3>
+            <p>While researching custom XS builds, I came across the article "<a href="https://www.autoevolution.com/news/custom-1974-yamaha-xs650-proves-age-is-just-a-number-149402.html#">Custom 1974 Yamaha XS650 Proves Age Is Just a Number</a>" in <i>autoevolution</i> magazine. Cheesy title aside, I found that the build featured in the article is almost exactly the design I am trying to execute.</p>
+            <figure>
+              <img src="XS650ReferenceMaterial/1974_XS_Right_Side.jpg" alt="Right side shot of a 1974 XS650 painted black with silver suspension and engine sitting in front of a ,weathered shed." />
+              <img src="XS650ReferenceMaterial/1974_XS_650_Left_Side.jpg" alt="Left side shot of a 1974 XS650 painted black with silver suspension and engine sitting in a wooded area." />
+              <figcaption>Pictured: My XS650 design goal</figcaption>
+            </figure>
+            <p>There are only a few elements that I would do different:</p>
+            <p>The custom exhaust is a project I am not ready to tackle, but a 2 into 1 system like this <a href="https://www.mikesxs.net/yamaha-xs650-2-1-xs-performance-headpipe-set.html?fits-motorcycle=Yamaha%2FXS650%2FXS650H+Special+II%2F1981">2-1 XS performance headpipe set</a> from MikesXS with a muffler is a more likely candidate.</p>
+            <p>I may attempt a custom seat using materials I already have, but in the event that it fails, a <a href="https://www.tuffside.com/2-Tone-Universal-Brat-Seats-p/tuff_uni_flatseat.htm">universal flat seat</a> from Tuffside is one that I think will work well.</p>
+            <p>The spedometer will also most likely be external, as I like the external look a bit more. If it ends up not looking like I imagine or I want to tackle another welding project, then maybe I will try to integrate it into the headlight.</p>
+            <p>I highly recomend checking out the original picures on the creator's <a href="https://www.instagram.com/meistermegerle/">Instagram profile</a> where there are many amazing car and bike builds.</p>
+          </section>
+          <hr class="dashed" />
+          <section id="XSFirstRun">
+            <h3>Proof That the Engine Ran</h3>
+            <video width="100%" controls>
+              <source src="XS650/DeadXS.mp4" type=video/mp4>
+            </video>
+            <p>This is a video my sister took during my first and only test of the bike. As shown in the video, there is a bit of backfiring and the engine begins to rev uncontrollably, requiring me to pull the spark plug caps to kill the motor.</p>
+            <p>After this video, I tried to start it back up, but it just bogged down and drained the battery. I then attempted to kick it over, but the kick starter was totaly limp with the clutch pulled in. With the clutch engaged, the lever was totaly locked up and would not budge.</p>
+            <p>I am going to pull the engine apart in the next month to do a full rebuild. Hopefully the issue is not something too catastrophic.</p>
+          </section>
+          <section id="ArdIgnition">
+            <h3>Arduino Controlled Ignition System</h3>
+            <p>The goal of this project is to design an ignition and timing advance system based on an Arduino or similar microcontroller.</p>
+            <p>As noted in the main section, the engine needs an overhaul before it can run. One of my goals is to have the motorcycle kick-only with no electric start.</p>
+          </section>
+        </article>
+      </main>
+      <aside>
+        <h2>About Me</h2>
+        <img id="profileimg" src="ProfilePictures/alex_profile.jpg" alt="Alex leaning on a pilar in front of Yerkes Observatory" title="Alex Scerba" />
+        <p>I am a college freshman who enjoys computers and all sorts of technology.</p>
+      </aside>
+    </div>
+    <footer>
+      <p>Alex Scerba: <a id="email" href="mailto:a.scerba02@gmail.com" title="a.scerba02@gmail.com">a.scerba02@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
