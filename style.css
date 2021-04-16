@@ -85,11 +85,17 @@ ul {
 }
 
 figure {
-  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin: 10px;*/
   border: 2px #333 solid;
   border-radius: 6px;
   padding: 20px 20px 5px 20px;
   max-width: 50%;
+}
+
+#profileimg {
+  max-width: 75%;
 }
 
 main {
@@ -125,6 +131,9 @@ footer a {
 (max-width: 1500px) {
   figure {
     max-width: 60%;
+  }
+  #profileimg {
+    max-width: 100%;
   }
 }
 
