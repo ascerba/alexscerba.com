@@ -114,6 +114,10 @@ aside {
   background-color: #f1f1f1;
 }
 
+aside li {
+  padding-bottom: 10px;
+}
+
 footer {
   margin: 0;
   padding: 5px;
