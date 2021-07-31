@@ -118,6 +118,20 @@ aside li {
   padding-bottom: 10px;
 }
 
+#tile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tile article {
+  flex: 40%;
+  max-width: auto;
+  padding: 0px 15px 0px 15px;
+  border: 2px gray solid;
+  border-radius: 6px;
+  margin: 5px;
+}
+
 footer {
   margin: 0;
   padding: 5px;
@@ -181,6 +195,12 @@ and (max-width: 510px) {
   }
   nav a {
     padding: 25px; 
+  }
+  #tile {
+    flex-direction: column;
+  }
+  #tile article {
+    max-width: 100%;
   }
   #gh_logo {
     padding: 25px 25px 20px 25px;
