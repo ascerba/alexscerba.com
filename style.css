@@ -85,8 +85,7 @@ ul {
 }
 
 figure {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   /*margin: 10px;*/
   border: 2px #333 solid;
   border-radius: 6px;
@@ -118,15 +117,24 @@ aside li {
   padding-bottom: 10px;
 }
 
-#tile {
+.tile {
   display: flex;
   flex-wrap: wrap;
 }
 
-#tile article {
+.tile article {
   flex: 40%;
   max-width: auto;
   padding: 0px 15px 0px 15px;
+  border: 2px gray solid;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.tile figure {
+  flex: 40%;
+  max-width: auto;
+  padding: 15px 15px 5px 15px;
   border: 2px gray solid;
   border-radius: 6px;
   margin: 5px;
@@ -150,6 +158,9 @@ footer a {
   figure {
     max-width: 60%;
   }
+  .tile figure {
+    max-width: auto;
+  }
   #profileimg {
     max-width: 100%;
   }
@@ -160,6 +171,9 @@ footer a {
   figure {
     max-width: 100%;
   }
+  .tile figure {
+    max-width: auto;
+  }
 }
 
 @media screen and 
@@ -169,6 +183,9 @@ footer a {
   }
   figure {
     max-width: 70%;
+  }
+  .tile figure {
+    max-width: auto;
   }
   aside {
     max-width: 100%;
@@ -196,10 +213,13 @@ and (max-width: 510px) {
   nav a {
     padding: 25px; 
   }
-  #tile {
+  .tile {
     flex-direction: column;
   }
-  #tile article {
+  .tile article {
+    max-width: 100%;
+  }
+  .tile figure {
     max-width: 100%;
   }
   #gh_logo {
