@@ -134,7 +134,7 @@ aside li {
 .tile figure {
   flex: 40%;
   max-width: auto;
-  padding: 15px 15px 5px 15px;
+  padding: 15px;
   border: 2px gray solid;
   border-radius: 6px;
   margin: 5px;
