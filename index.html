@@ -5,10 +5,10 @@
 
     <meta charset="utf-8" />
     <meta name="author" content="Alexander Rees Scerba" />
-    <meta name="description" content="A testing ground for basic web development and a place to post my project updates and other things about myself." />
+    <meta name="description" content="My place to learn web development and post about my various hobbies, projects, and life updates." />
     <meta name="viewport" content="width-device-width, initial-scale=1" />
     <title>Home - Alex Scerba</title>
-    <link rel="stylesheet" href="newstyle.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="Logos/SEO_Pixel_Art.ico" type="image/x-icon" />
 
   </head>
@@ -19,23 +19,33 @@
 
       <span id="name">Alex Scerba</span>
       <p>Maker, Tinkerer, & Computer Enthusiast</p>
-      <p id="top-contact">Contact: <a id="email" href="mailto:a.scerba02@gmail.com" title="ascerba02@gmail.com">a.scerba02@gmail.com</a></p>
+      <p id="top-contact">Contact: <a href="mailto:a.scerba02@gmail.com">a.scerba02@gmail.com</a></p>
 
     </header>
 
-    <nav>
+    <nav aria-labelledby="global-navigation" id="global-navigation">
 
-      <ul id="global-nav">
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="html/hobbies.html" title="Hobbies">Hobbies</a></li>
-        <li><a href="html/projects.html" title="Projects">Projects</a></li>
-        <li><a href="html/blog.html" title="Blog">Blog</a></li>
-        <li><a id="gh_logo" href="https://github.com/ascerba"><img src="Logos/github.png" alt="Github logo PNG image" title="GitHub" /></a></li>
+      <ul class="block-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/hobbies.html">Hobbies</a></li>
+        <li><a href="html/projects.html">Projects</a></li>
+        <li><a href="html/blog.html">Blog</a></li>
+        <li><a href="html/about.html">About</a></li>
+      </ul>
+
+      <ul id="fixed-block-navigation" class="block-navigation">
+        <div id="flex-container">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/hobbies.html">Hobbies</a></li>
+          <li><a href="html/projects.html">Projects</a></li>
+          <li><a href="html/blog.html">Blog</a></li>
+          <li><a href="html/about.html">About</a></li>
+        </div>
       </ul>
 
     </nav>
 
-    <main id="homepage">
+    <main id="main-wo-aside">
 
       <h1>Home</h1>
       <hr class="head-bar" />
@@ -59,9 +69,10 @@
         <h2>Featured Content</h2>
         <hr />
 
-        <div class="tile-2x">
+        <div class="tile">
+
           <article class="framed-article-half">
-            <a href="html/blog.html#07-27-2021">
+            <a href="html/blog.html#2021-07-27">
               <h3>Cool Motorhome</h3>
               <img src="Media/Vixen_21TD.jpg" alt="Picture of an 80s Vixen 21TD motorhome in front of an industrial garage." />
               <p>Found a cool motorhome while driving around...</p>
@@ -101,6 +112,8 @@
     <footer>
       <p>Alex Scerba: <a href="mailto:a.scerba02@gmail.com">a.scerba02@gmail.com</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
   </body>
 

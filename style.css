@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');
+*/
 * {
   box-sizing: border-box;
 }
@@ -10,8 +10,119 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: large;
+  font-size: 100%;
   margin: 0px;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+}
+
+#name {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.block-navigation {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #333;
+}
+
+#fixed-block-navigation {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-navigation a {
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.block-navigation a:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+#side-navigation {
+  padding: 20px;
+}
+
+#outline-navigation li {
+  margin: 10px 0;
+}
+
+#main-wo-aside {
+  padding: 20px 17%;
+}
+
+#main-w-aside {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 17%;
+  padding: 20px 0;
+}
+
+#main-w-aside nav {
+  flex: 20%;
+}
+
+#root-article {
+  flex: 80%;
+}
+
+main p {
+  text-align: justify;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial';
+}
+
+.head-bar {
+  border: 2px black solid;
+}
+
+.framed-article {
+  margin: 25px;
+  padding: 5px 25px;
+  border: 2px #333 solid;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.tile {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.framed-article-half {
+  flex: 50%;
+  padding: 5px 25px;
+  border: 2px #333 solid;
+  border-radius: 6px;
+  max-width: 100%;
 }
 
 img {
@@ -21,67 +132,7 @@ img {
 
 a {
   color: black;
-}
-
-header {
-  /*display: flex;
-  flex-wrap: wrap;*/
-  
-  padding: 30px;
-  text-align: center;
-}
-
-/*
-#main_logo {
-  flex: 50%;
-  border-radius: 0px;
-  padding: 10px;
-}
-
-#header_text {
-  flex: 50%;
-  text-align: right;
-  padding: 25px;
-}
-*/
-
-#name {
-  font-weight: bold;
-  font-size: xx-large;
-}
-
-nav {
-  display: flex;
-  background-color: #333;
-}
-
-nav a { 
-  color: white;
-  text-align: center;
-  padding: 15px;
   text-decoration: none;
-}
-
-#gh_logo {
-  padding: 10px 15px 5px 15px;
-}
-
-nav img {
-  width: 30px;
-}
-
-nav a:hover {
-  color: black;
-  background-color: #ddd;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Arial';
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 ul {
@@ -95,19 +146,6 @@ figure {
   border-radius: 6px;
   padding: 20px 20px 5px 20px;
   max-width: 50%;
-}
-
-#profileimg {
-  max-width: 75%;
-}
-
-main {
-  flex: 60%;
-  padding: 20px;
-}
-
-main p {
-  text-align: justify;
 }
 
 aside {
