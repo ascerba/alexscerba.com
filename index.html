@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
+
     <meta charset="utf-8" />
-    <meta name="author" content="Alexander R Scerba" />
+    <meta name="author" content="Alexander Rees Scerba" />
     <meta name="description" content="A testing ground for basic web development and a place to post my project updates and other things about myself." />
     <meta name="viewport" content="width-device-width, initial-scale=1" />
     <title>Home - Alex Scerba</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="newstyle.css" />
     <link rel="shortcut icon" href="Logos/SEO_Pixel_Art.ico" type="image/x-icon" />
+
   </head>
+
   <body>
+
     <header>
-      <!--<img id="main_logo" src="Logos/SiteLogo.png" alt="Site logo. Text Alex Scerba next to pixel art observatory." />
-      <div id="header_text">
-        <p>
-          Maker, Tinkerer, & Computer Enthusiast<br />
-          <address>
-            Contact: <a href="mailto:a.scerba02@gmail.com">a.scerba02@gmail.com</a>
-          </address>
-        </p>
-      </div>-->
+
       <span id="name">Alex Scerba</span>
       <p>Maker, Tinkerer, & Computer Enthusiast</p>
       <p id="top-contact">Contact: <a id="email" href="mailto:a.scerba02@gmail.com" title="ascerba02@gmail.com">a.scerba02@gmail.com</a></p>
+
     </header>
+
     <nav>
-      <a href="index.html" title="Home">Home</a>
-      <a href="html/hobbies.html" title="Hobbies">Hobbies</a>
-      <a href="html/projects.html" title="Projects">Projects</a>
-      <a href="html/blog.html" title="Blog">Blog</a>
-      <a id="gh_logo" href="https://github.com/ascerba"><img src="Logos/github.png" alt="Github logo PNG image" title="GitHub" /></a>
+
+      <ul id="global-nav">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="html/hobbies.html" title="Hobbies">Hobbies</a></li>
+        <li><a href="html/projects.html" title="Projects">Projects</a></li>
+        <li><a href="html/blog.html" title="Blog">Blog</a></li>
+        <li><a id="gh_logo" href="https://github.com/ascerba"><img src="Logos/github.png" alt="Github logo PNG image" title="GitHub" /></a></li>
+      </ul>
+
     </nav>
-    <div class="content">
-      <aside></aside>
-      <main>
-        <h1>Home</h1>
+
+    <main id="homepage">
+
+      <h1>Home</h1>
+      <hr class="head-bar" />
+
+      <section id="latest-post">
+
+        <h2>Latest Post</h1>
         <hr />
-        <h2>Latest</h2>
+
+        <article class="framed-article">
+          <a href="html/blog.html#08-07-2021">
+            <h3>New Networking Gear</h3>
+            <img src="Media/Cisco_SG200-50P.jpg" alt="Front of 50 port Cisco SG200-50G network switch." />
+            <p>Got some new networking gear at a swap meet</p>
+          </a>
+        </article>
+
+      </section>
+
+      <section id="featured-posts">
+
+        <h2>Featured Content</h1>
         <hr />
-        <section class="tile">
-          <article style="padding-top: 0px;">
-            <a href="html/blog.html#08-07-2021"><h3>New Networking Gear</h3></a>
-            <a href="html/blog.html#08-07-2021"><img src="Media/Cisco_SG200-50P.jpg" alt="Front of 50 port Cisco SG200-50G network switch." /></a>
-            <p>Got some new networking gear at a swap meet...</p>
+
+        <div class="tile-2x">
+
+          <article class="framed-article-half">
+            <a href="html/blog.html#07-27-2021">
+              <h3>Cool Motorhome</h3>
+              <img src="Media/Vixen_21TD.jpg" alt="Picture of an 80s Vixen 21TD motorhome in front of an industrial garage." />
+              <p>Found a cool motorhome while driving around</p>
+            </a>
           </article>
-        </section>
-        <h2>Featured Content</h2>
-        <hr />
-        <section class="tile">
-          <article>
-            <a href="html/blog.html#07-27-2021"><h3>Cool Motorhome</h3></a>
-            <a href="html/blog.html#07-27-2021"><img src="Media/Vixen_21TD.jpg" alt="Picture of an 80s Vixen 21TD motorhome in front of an industrial garage." title="Vixen 21TD" /></a>
-            <p>Found a cool motorhome while driving around...</p>
+
+          <article class="framed-article-half">
+            <a href="html/projects.html#XSEngineTeardown">
+              <h3>XS650 Engine Teardown</h3>
+              <img src="Media/XS650/Engine_Top_Laid_Out_Crop.jpg" alt="1981 XS650 engine laid out on work bench. The jugs, head, and lower half with pistons attached are separated." />
+              <p>Finally getting around to doing the engine teardown for the XS650</p>
+            </a>
           </article>
-          <article>
-            <a href="html/projects.html#XSEngineTeardown"><h3>XS650 Engine Teardown</h3></a>
-            <a href="html/projects.html#XSEngineTeardown"><img src="Media/XS650/Engine_Top_Laid_Out_Crop.jpg" alt="1981 XS650 engine laid out on work bench. The jugs, head, and lower half with pistons attached are separated." /></a>
-            <p>Finally getting around to doing the engine teardown for the XS650...</p>
+
+          <article class="framed-article-half">
+            <a href="html/projects.html#Website">
+              <h3>This Website</h3>
+              <img src="Media/Site_Source.png" alt="Screenshot of Visual Studio Code with the HTML for this website open." />
+              <p>Information about the status of this website as a personal project</p>
+            </a>
           </article>
-          <article>
-            <a href="html/projects.html#Website"><h3>This Website</h3></a>
-            <a href="html/projects.html#Website"><img src="Media/Site_Source.png" alt="Screenshot of Visual Studio Code with the HTML for this website open." /></a>
-            <p>Information about the status of this website as a personal project...</p>
+
+          <article class="framed-article-half">
+            <a href="html/projects.html#LENSS">
+              <h3>LENSS Project</h3>
+              <p>Awesome project about monitoring light pollution in development by GLAS Education in Williams Bay, WI</p>
+              <blockquote cite="https://sites.google.com/a/starsatyerkes.net/yerkesprojects/programs/lenss">The goal of the Lakeshore Environmental and Night Sky Sensor (LENSS) Project is to contribute to the   environmental health of Geneva Lake and increase the level of community involvement with environmental issues through a community-based environmental action project to design, test, build and deploy remote-monitoring stations that can accommodate a variety of sensors.</blockquote>
+            </a>
           </article>
-          <article>
-            <a href="html/projects.html#LENSS"><h3>LENSS Project</h3></a>
-            <p>Awesome project about monitoring light pollution in development by <a href="">GLAS Education</a> in Williams Bay, WI...</p>
-            <a href="html/projects.html#LENSS" style="text-decoration: none;"><blockquote cite="https://sites.google.com/a/starsatyerkes.net/yerkesprojects/programs/lenss">The goal of the Lakeshore Environmental and Night Sky Sensor (LENSS) Project is to contribute to the   environmental health of Geneva Lake and increase the level of community involvement with environmental issues through a community-based environmental action project to design, test, build and deploy remote-monitoring stations that can accommodate a variety of sensors.</blockquote></a>
-          </article>
-        </section>
-      </main>
-      <aside>
-        <h2>About Me</h2>
-        <img id="profileimg" src="Media/ProfilePictures/alex_profile.jpg" alt="Alex leaning on a pillar in front of Yerkes Observatory" title="Alex Scerba" />
-        <p>I am a college freshman who enjoys art and technology.</p>
-      </aside>
-    </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
     <footer>
-      <p>Alex Scerba: <a id="email" href="mailto:a.scerba02@gmail.com" title="a.scerba02@gmail.com">a.scerba02@gmail.com</a></p>
+      <p>Alex Scerba: <a href="mailto:a.scerba02@gmail.com">a.scerba02@gmail.com</a></p>
     </footer>
+
   </body>
+
 </html>
