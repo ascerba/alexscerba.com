@@ -1,2 +1,6 @@
 # macOS stuff
 *.DS_Store
+
+# EJS stuff for the time being
+nodeTesting
+ejs
