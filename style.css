@@ -1,5 +1,7 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto');
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/* Standard elements */
 * {
   box-sizing: border-box;
 }
@@ -8,11 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 100%;
-  margin: 0px;
-}
+/* Header */
 
 header {
   padding: 30px;
@@ -21,8 +19,10 @@ header {
 
 #name {
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 250%;
 }
+
+/* Navigation */
 
 .block-navigation {
   margin: 0;
@@ -41,7 +41,7 @@ header {
   min-width: 100%;
 }
 
-#flex-container {
+.flex-container {
   display: flex;
   justify-content: space-around;
 }
@@ -61,35 +61,41 @@ header {
 
 #side-navigation {
   padding: 20px;
+  flex: 25%;
 }
 
 #outline-navigation li {
   margin: 10px 0;
 }
 
+/* Main content containers */
+
 #main-wo-aside {
-  padding: 20px 17%;
+  padding: 20px 20%;
 }
 
 #main-w-aside {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 17%;
   padding: 20px 0;
-}
-
-#main-w-aside nav {
-  flex: 20%;
+  padding-right: 20%;
 }
 
 #root-article {
-  flex: 80%;
+  flex: 75%;
+}
+
+/* Body and standard tags */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  margin: 0px;
 }
 
 main p {
   text-align: justify;
 }
-
 
 h1 {
   text-align: center;
@@ -97,6 +103,39 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Arial';
+}
+
+img {
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+figure {
+  margin: auto;
+  /*margin: 10px;*/
+  border: 2px #333 solid;
+  border-radius: 6px;
+  padding: 20px 20px 5px 20px;
+  max-width: 50%;
+}
+
+/* Special classes */
+
+.dropdown_nav {
+  display: none;
 }
 
 .head-bar {
@@ -125,40 +164,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
-img {
-  border-radius: 6px;
-  max-width: 100%;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-figure {
-  margin: auto;
-  /*margin: 10px;*/
-  border: 2px #333 solid;
-  border-radius: 6px;
-  padding: 20px 20px 5px 20px;
-  max-width: 50%;
-}
-
-aside {
-  flex: 20%;
-  max-width: 20%;
-  padding: 20px;
-  background-color: #f1f1f1;
-}
-
-aside li {
-  padding-bottom: 10px;
-}
-
 .tile {
   display: flex;
   flex-wrap: wrap;
@@ -182,6 +187,8 @@ aside li {
   margin: 5px;
 }
 
+/* Footer */
+
 footer {
   margin: 0;
   padding: 5px;
@@ -195,6 +202,8 @@ footer a {
   padding: 0;
 }
 
+/* Figure resize at 1500px */
+
 @media screen and 
 (max-width: 1500px) {
   figure {
@@ -203,25 +212,18 @@ footer a {
   .tile figure {
     max-width: auto;
   }
-  #profileimg {
-    max-width: 100%;
-  }
 }
 
-@media screen and
-(max-width: 1000px) {
-  figure {
-    max-width: 100%;
-  }
-  .tile figure {
-    max-width: auto;
-  }
-}
+/* Flex side nav to top of screen and resize figure */
 
 @media screen and 
-(max-width: 800px) {
-  header, .content {
+(max-width: 1200px) {
+  header, #main-w-aside{
     flex-direction: column;
+  }  
+  #main-w-aside {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   figure {
     max-width: 70%;
@@ -229,31 +231,14 @@ footer a {
   .tile figure {
     max-width: auto;
   }
-  aside {
-    max-width: 100%;
-  }
-  aside li {
-    padding: 10px;
-  }
-  #profileimg {
-    max-width: 50%;
-  }
 }
 
 /* Mobile View */
+
 @media only screen 
 and (max-width: 510px) {
   figure {
     max-width: 100%;
-  }
-  #top-contact {
-    display: none;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav a {
-    padding: 25px; 
   }
   .tile {
     flex-direction: column;
@@ -264,7 +249,60 @@ and (max-width: 510px) {
   .tile figure {
     max-width: 100%;
   }
-  #gh_logo {
-    padding: 25px 25px 20px 25px;
+  .block-navigation {
+    display: none;
+  }
+  #side-navigation {
+    padding: 20px 10%;
+  }
+
+  /* Mobile nav button */
+  .dropdown_button {
+    font-size: 18px;
+    position: fixed;
+    top: -3px;
+    right: -3px;
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px;
+    border: 2px #333 solid;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+  }
+  .dropdown_button:hover, .dropdown_button:focus {
+    color: black;
+    background-color: #ddd;
+  }
+  .dropdown_nav {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown_content {
+    display: none;
+    position: fixed;
+    top: 45px;
+    right: -3px;
+    z-index: 1;
+  }
+  .dropdown_content a {
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+    border: 2px #333 solid;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.5);
+  }
+  .dropdown_content a:hover {
+    color: black;
+    background-color: #ddd;
+    border: 2px #333 solid;
+    border-radius: 2px;
+  }
+  .show {
+    display: block;
   }
 }
