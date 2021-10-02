@@ -187,6 +187,13 @@ figure {
   margin: 5px;
 }
 
+#page-break {
+  min-width: 100%;
+  min-height: 30px;
+  background-color: #333;
+  display: none;
+}
+
 /* Footer */
 
 footer {
@@ -254,6 +261,10 @@ and (max-width: 510px) {
   }
   #side-navigation {
     padding: 20px 10%;
+  }
+
+  #page-break {
+    display: inline-block;
   }
 
   /* Mobile nav button */
