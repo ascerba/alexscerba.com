@@ -24,6 +24,11 @@ header {
 
 /* Navigation */
 
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .block-navigation {
   margin: 0;
   padding: 0;
@@ -39,11 +44,6 @@ header {
   left: 0;
   top: 0;
   min-width: 100%;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-around;
 }
 
 .block-navigation a {
@@ -70,6 +70,10 @@ header {
 
 /* Main content containers */
 
+#root-article {
+  flex: 75%;
+}
+
 #main-wo-aside {
   padding: 20px 20%;
 }
@@ -81,20 +85,12 @@ header {
   padding-right: 20%;
 }
 
-#root-article {
-  flex: 75%;
-}
-
 /* Body and standard tags */
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   margin: 0px;
-}
-
-main p {
-  text-align: justify;
 }
 
 h1 {
@@ -105,9 +101,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Arial';
 }
 
-img {
-  border-radius: 6px;
-  max-width: 100%;
+main p {
+  text-align: justify;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 a {
@@ -115,12 +114,13 @@ a {
   text-decoration: none;
 }
 
-p a {
-  text-decoration: underline;
-}
-
 ul {
   padding-left: 20px;
+}
+
+img {
+  border-radius: 6px;
+  max-width: 100%;
 }
 
 figure {
@@ -150,12 +150,6 @@ figure {
   max-width: 100%;
 }
 
-.tile {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 25px;
-}
-
 .framed-article-half {
   flex: 50%;
   padding: 5px 25px;
@@ -167,6 +161,7 @@ figure {
 .tile {
   display: flex;
   flex-wrap: wrap;
+  padding: 25px;
 }
 
 .tile article {
@@ -271,8 +266,8 @@ and (max-width: 510px) {
   .dropdown_button {
     font-size: 18px;
     position: fixed;
-    top: -3px;
-    right: -3px;
+    top: -2px;
+    right: -2px;
     background-color: lightskyblue;
     color: white;
     padding: 10px;
@@ -288,12 +283,13 @@ and (max-width: 510px) {
   .dropdown_nav {
     position: relative;
     display: inline-block;
+    min-width: 100%;
   }
   .dropdown_content {
     display: none;
     position: fixed;
     top: 45px;
-    right: -3px;
+    right: -2px;
     z-index: 1;
   }
   .dropdown_content a {
