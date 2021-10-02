@@ -221,7 +221,7 @@ footer a {
   header, #main-w-aside{
     flex-direction: column;
   }  
-  #main-w-aside {
+  #main-w-aside, #main-wo-aside {
     padding-left: 10%;
     padding-right: 10%;
   }
