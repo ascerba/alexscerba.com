@@ -1,6 +1,7 @@
 function stickyTopNav() {
   var fixed_block_nav = document.getElementById("fixed-block-navigation").style;
-  if (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175) {
+  var content = document.getElementById("header");
+  if (content.clientWidth > 510 && (document.body.scrollTop > 175 || document.documentElement.scrollTop > 175)) {
     fixed_block_nav.display = "inline-block";
 
   } else {
@@ -26,5 +27,21 @@ function stickySideNav() {
 
 window.onscroll = function() {
   stickyTopNav();
-  stickySideNav();
 };
+
+function navToggle() {
+  document.getElementById("dropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown_button')) {
+    var dropdowns = document.getElementsByClassName("dropdown_content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
