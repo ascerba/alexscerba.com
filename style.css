@@ -313,8 +313,4 @@ and (max-width: 510px) {
     padding: 0;
     margin: 5px;
   }
-  .action ul li:hover {
-    background: #ddd;
-    color: #333;
-  }
 }
