@@ -134,7 +134,6 @@ main ul {
 main img {
   border-radius: 6px;
   max-width: 100%;
-  min-height: max-content;
 }
 
 main figure {
