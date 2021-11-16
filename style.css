@@ -264,7 +264,7 @@ and (max-width: 510px) {
   .action {
     position: fixed;
     bottom: 25px;
-    left: 25px;
+    right: 25px;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -288,6 +288,7 @@ and (max-width: 510px) {
   }
   .action ul {
     position: absolute;
+    right: 0;
     bottom: 25px;
     background: #333;
     min-width: 150px;
@@ -299,6 +300,7 @@ and (max-width: 510px) {
     transition: 0.3s;
   }
   .action.active ul {
+    right: 0;
     bottom: 70px;
     opacity: 1;
     visibility: visible;
@@ -312,5 +314,8 @@ and (max-width: 510px) {
     border-radius: 15px;
     padding: 0;
     margin: 5px;
+  }
+  .action ul li a {
+    padding: 20px 40px;
   }
 }
