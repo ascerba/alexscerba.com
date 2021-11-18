@@ -18,6 +18,10 @@ header {
   background: rgba(0,0,0,0.1);
 }
 
+.header.sticky {
+  padding-bottom: 99px;
+}
+
 #name {
   font-weight: bold;
   font-size: 250%;
