@@ -149,6 +149,10 @@ main figure {
   max-width: 50%;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 /* Special classes */
 
 .head-bar {
