@@ -81,8 +81,27 @@ header {
   flex: 25%;
 }
 
-#outline-navigation li {
+#side-nav-scroll-box {
   margin: 10px 0;
+  padding: 5px;
+  border: 2px #333 solid;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+#outline-navigation {
+  max-height: 50vh;
+  overflow: auto;
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+
+#outline-navigation li {
+  margin: 10px;
 }
 
 /* Main content containers */
@@ -320,5 +339,9 @@ and (max-width: 510px) {
     border-radius: 15px;
     padding: 0;
     margin: 5px;
+  }
+
+  #outline-navigation {
+    max-height: 25vh;
   }
 }
