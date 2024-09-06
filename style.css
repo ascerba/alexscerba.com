@@ -157,6 +157,11 @@ main ul {
 main img {
   border-radius: 6px;
   max-width: 100%;
+  height: auto;
+  display: block;
+  font-style: italic;
+  color: rgb(177, 177, 177);
+  background-color: rgb(73, 73, 73);
 }
 
 main figure {
@@ -235,7 +240,7 @@ footer a {
 
 /* Figure resize at 1500px */
 
-@media screen and 
+@media screen and
 (max-width: 1500px) {
   figure {
     max-width: 60%;
@@ -247,11 +252,11 @@ footer a {
 
 /* Flex side nav to top of screen and resize figure */
 
-@media screen and 
+@media screen and
 (max-width: 1200px) {
   header, #main-w-aside{
     flex-direction: column;
-  }  
+  }
   #main-w-aside, #main-wo-aside {
     padding-left: 10%;
     padding-right: 10%;
@@ -266,7 +271,7 @@ footer a {
 
 /* Mobile View */
 
-@media only screen 
+@media only screen
 and (max-width: 510px) {
   main figure {
     max-width: 100%;
@@ -287,7 +292,7 @@ and (max-width: 510px) {
   main a {
     text-decoration: none;
   }
-  
+
   .action {
     position: fixed;
     bottom: 25px;
